@@ -1,0 +1,186 @@
+@import '../../../../index.scss';
+.form-group{
+    .btn-facebook, .btn-danger{
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        padding: 0px;
+    }
+}
+
+.search-card{
+    margin-top: 30px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    // box-shadow: 0 22px 36px 0 rgba(0,16,87,.09);
+    border-radius: 10px;
+}
+
+
+.limiter {
+    margin-top: 100px;
+}
+
+.container-table100 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wrap-table100 {
+    width: 1170px
+}
+
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+table * {
+    position: relative
+}
+
+table td,
+table th {
+    padding-left: 8px
+}
+
+table thead tr {
+    height: 50px;
+    background: #36304a
+}
+
+table tbody{
+    border: 1px solid #ddd;
+}
+table tbody tr {
+    height: 40px;
+    font-size: 12px;
+}
+
+table tbody tr:last-child {
+    border: 0
+}
+
+table td,
+table th {
+    text-align: left
+}
+
+.table100-head th {
+    // font-family: OpenSans-Regular;
+    // font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f7f7f7
+}
+
+tbody tr {
+    font-size: 15px;
+    color: gray;
+    line-height: 1.2;
+    font-weight: unset
+}
+
+tbody tr:hover {
+    color: #555;
+    background-color: #f5f5f5;
+    cursor: pointer
+}
+
+
+@media screen and (max-width:992px) {
+    table {
+        display: block
+    }
+    table>*,
+    table tr,
+    table td,
+    table th {
+        display: block
+    }
+    table thead {
+        display: none
+    }
+    table tbody tr {
+        height: auto;
+        padding: 37px 0
+    }
+    table tbody tr td {
+        padding-left: 40%!important;
+        margin-bottom: 24px
+    }
+    table tbody tr td:last-child {
+        margin-bottom: 0
+    }
+    table tbody tr td:before {
+        font-family: OpenSans-Regular;
+        font-size: 14px;
+        color: #999;
+        line-height: 1.2;
+        font-weight: unset;
+        position: absolute;
+        width: 40%;
+        left: 30px;
+        top: 0
+    }
+    table tbody tr td:nth-child(1):before {
+        content: "Name"
+    }
+    table tbody tr td:nth-child(2):before {
+        content: "Category"
+    }
+    table tbody tr td:nth-child(3):before {
+        content: "Barcode"
+    }
+    table tbody tr td:nth-child(4):before {
+        content: "Price"
+    }
+    table tbody tr td:nth-child(5):before {
+        content: "Company"
+    }
+    table tbody tr td:nth-child(6):before {
+        content: "Comment"
+    }
+    .column4,
+    .column5,
+    .column6 {
+        text-align: left
+    }
+    .column4,
+    .column5,
+    .column6,
+    .column1,
+    .column2,
+    .column3 {
+        width: 100%
+    }
+    tbody tr {
+        font-size: 14px
+    }
+}
+
+@media(max-width:576px) {
+    .container-table100 {
+        padding-left: 15px;
+        padding-right: 15px
+    }
+}

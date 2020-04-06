@@ -1,0 +1,36 @@
+@import '../../../index.scss';
+
+
+.entry-links{
+    ul{
+        border-right: 1px solid #ddd;
+        padding-right: 20px;
+    
+        li{
+    
+            a{
+                display: block;
+                padding:5px 10px;
+                border: 1px dashed transparent;
+                margin-bottom: 5px;
+    
+                span{
+                    position: absolute;
+                    left: 0px;
+                    text-indent: 50px;
+                }
+                &:hover{
+                    border-radius: .3rem;
+                    background: #0026ff1c;
+                    color: #5e72e4;
+                }
+    
+                &.active-link{
+                    border-radius: .3rem;
+                    background: #0026ff1c;
+                    color: #5e72e4;
+                }
+            }
+        }
+    }
+}

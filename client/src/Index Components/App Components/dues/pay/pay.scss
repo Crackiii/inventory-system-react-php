@@ -1,0 +1,84 @@
+@import '../../../../index.scss';
+
+.form-group{
+    position: relative;
+
+    .people_list{
+        position: absolute;
+        width: 100%;
+        min-height: auto;
+        max-height: 262px;
+        overflow: hidden;
+        overflow-y: scroll;
+        background: #fff;
+        z-index: 999;
+        top: 100%;
+        left: 0;
+        border: 1px solid #ddd;
+        border-top: none;
+
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+        &::-webkit-scrollbar-thumb{
+            width: 6px;
+            background: #888;
+        }
+
+        .list-item{
+            border-bottom: 1px solid #ddd;
+            cursor: pointer;
+
+            &:hover{
+                background: rgba(71, 61, 139, 0.11);
+            }
+
+            .li{
+                padding: 10px 20px;
+
+                .name{
+                    font-weight: 700;
+                }
+                .nic,
+                .phone{
+                    padding: 5px 0px;
+                }
+                .address,
+                .nic,
+                .phone{
+                    font-size: 12px;
+                }
+            }
+
+            
+        }
+    }
+}
+.li-custom{
+    .nic,
+    .phone{
+        padding: 5px 0px;
+    }
+    .name,
+    .amount{
+        font-weight: bold;
+        margin-top: 30px;
+    }
+    // border: 1px solid #ddd;
+    padding: 20px 0px;
+    padding-top: 0px;
+    border-left: none;
+    border-right: none;
+    .close_item{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        cursor: pointer;
+        &:hover{
+            color: indianred;
+        }
+        i{
+            font-size: 12px;
+        }
+    }
+}

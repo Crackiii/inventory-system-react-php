@@ -1,0 +1,46 @@
+@import '../../../index.scss';
+
+
+.links-table{
+    height: calc(100vh - 60px);
+    background: #fff;
+
+    .table-head{
+        width: 30%;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+        padding: 20px 0;
+    }
+
+    ul{
+
+        li{
+
+            a{
+                display: block;
+                padding:5px 10px;
+                border: 1px dashed transparent;
+                margin-bottom: 5px;
+
+                span{
+                    position: absolute;
+                    left: 0px;
+                    text-indent: 60px;
+                }
+                &:hover{
+                    border-radius: .3rem;
+                    background: #0026ff1c;
+                    color: #5e72e4;
+                }
+
+                &.active-link{
+                    border-radius: .3rem;
+                    background: #0026ff1c;
+                    color: #5e72e4;
+                }
+            }
+        }
+    }
+}

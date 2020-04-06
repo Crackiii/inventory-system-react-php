@@ -1,0 +1,16 @@
+@import '../../../index.scss';
+
+.search{
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    .big-head{
+        padding: 20px 0px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #2dce89;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+}

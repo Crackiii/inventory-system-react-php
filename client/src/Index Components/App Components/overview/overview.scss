@@ -1,0 +1,26 @@
+@import '../../../index.scss';
+
+
+.top-header{
+    padding: 10px;
+    background: #fff;
+    // margin-top: 30px;
+
+    .big-head{
+        color: #000;
+        @include flex(column, center);
+    }
+}
+
+.overview-row{
+    margin-bottom: 100px;
+    .css-2b097c-container{
+        width: 200px;
+        font-size: 13px;
+    
+        .css-yk16xz-control{
+            cursor: pointer;
+        }
+    }
+}
+

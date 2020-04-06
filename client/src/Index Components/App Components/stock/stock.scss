@@ -1,0 +1,51 @@
+@import '../../../index.scss';
+
+.stock{
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+
+    .big-head{
+        padding: 20px 0px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #5e72e4;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+
+    .stock-card{
+        width: 100%;
+        text-align: initial;
+        text-transform: unset;
+        font-weight: normal;
+        margin-bottom: 30px;
+
+        .name{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .stock-amount{
+            @include flex(column, center);
+        }
+
+        .availability{
+            padding: 20px 0;
+            text-align: center;
+            div{
+                display: block;
+                width: 100%;
+                &:nth-child(1){
+                    border-right: 1px solid rgba(0, 0, 0, 0.2);
+                }
+            }
+            span{
+                display: block;
+                font-size: 18px;
+            }
+        }
+
+    }
+}
